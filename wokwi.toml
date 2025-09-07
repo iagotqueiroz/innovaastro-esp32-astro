@@ -1,0 +1,9 @@
+[wokwi]
+version = 1
+firmware = '.pio/build/esp32dev/firmware.bin'
+elf = '.pio/build/esp32dev/firmware.elf'
+
+# Encaminhe http://localhost:8180 para a porta 80 no ESP32 simulado:
+[[net.forward]]
+from = "localhost:8180"
+to = "device:80"
